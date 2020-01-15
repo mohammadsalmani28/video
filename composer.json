@@ -1,18 +1,15 @@
 {
-    "name": "mohammadsalmani28/faker",
-    "description": "Persian faker is a package for laravel to make dummy data",
+    "name": "mohammadsalmani28/aparat",
+    "description": "Aparat package is a package for generating aparat videos",
     "type": "laravel",
     "license": "MIT",
-    "homepage": "https://github.com/mohammadsalmani28/faker",
+    "homepage": "https://github.com/mohammadsalmani28/aparat",
     "keywords": [
         "laravel",
         "php",
-        "faker",
-        "persian",
-        "package",
-        "fake data",
-        "Data",
-        "dummy data"
+        "aparat",
+        "video",
+        "package"
     ],
     "authors": [
         {
@@ -22,7 +19,7 @@
     ],
     "autoload": {
         "psr-4": {
-          "Mohammadsalmani28\\Faker\\": "src"
+          "Mohammadsalmani28\\Aparat\\": "src"
         }
     },
     "minimum-stability": "dev",
