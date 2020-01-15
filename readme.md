@@ -1,5 +1,5 @@
-# My Faker
-My faker is a package for laravel. This package created for making fake data in your project.
+# Aparat
+Aparat is a package for laravel. This package created for making fake data in your project.
 please dont use it for create spam.
 thanks for using my package!
 
