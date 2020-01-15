@@ -22,6 +22,7 @@
           "Mohammadsalmani28\\Aparat\\": "src"
         }
     },
-    "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev"
+    
 }
