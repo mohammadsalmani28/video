@@ -10,7 +10,9 @@
         "aparat",
         "video",
         "package",
-        "youtube"
+        "youtube",
+        "namasha",
+        "tamasha"
     ],
     "authors": [
         {
@@ -20,7 +22,7 @@
     ],
     "autoload": {
         "psr-4": {
-          "Mohammadsalmani28\\Video\\": "src"
+            "Mohammadsalmani28\\Video\\": "src"
         }
     },
     "minimum-stability": "dev",

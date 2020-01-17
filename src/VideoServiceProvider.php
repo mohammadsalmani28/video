@@ -13,20 +13,17 @@ class VideoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \Blade::directive('aparat', function ($expression) {
-            $expression = str_replace("'", "", $expression);
-            $expression = explode("/", $expression);
-            $id = end($expression);
-            $url = "https://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame";
-//            return "<iframe src='$url' allowFullScreen='true' webkitallowfullscreen='true' mozallowfullscreen='true'></iframe>";
-            return "<style>.h_iframe-aparat_embed_frame{position:relative;}
-.h_iframe-aparat_embed_frame 
-.ratio{display:block;width:100%;height:auto;}
-.h_iframe-aparat_embed_frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;}</style>
-<div class=\"h_iframe-aparat_embed_frame\">
-<span style=\"display: block;\"></span>
-<iframe src=\"$url\" allowFullScreen=\"true\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\"></iframe>
-</div>";
+        $this->defineDirectives();
+    }
+
+    private function defineDirectives(){
+        \Blade::directive('video', function ($expression) {
+            list($service,$url) = explode(',', $expression);
+            $url = str_replace("'", "", $url);
+            $url = str_replace(" ", "", $url);
+            $service = str_replace("'", "", $service);
+            $service = str_replace(" ", "", $service);
+            return Video::receiver($service,$url);
         });
     }
 
