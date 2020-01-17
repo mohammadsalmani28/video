@@ -1,12 +1,12 @@
 <?php
 /**
- * Mohammadsalmani28/Aparat package
+ * Mohammadsalmani28/Video package
  */
 
-namespace Mohammadsalmani28\Aparat;
+namespace Mohammadsalmani28\Video;
 //use Illuminate\Support\Str;
 
-class Aparat
+class Video
 {
 
     public function __construct()

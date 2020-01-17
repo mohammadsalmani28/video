@@ -1,15 +1,16 @@
 {
-    "name": "mohammadsalmani28/aparat",
-    "description": "Aparat package is a package for generating aparat videos",
+    "name": "mohammadsalmani28/video",
+    "description": "Video package is a package for generating online video services like youtube, aparat etc!",
     "type": "laravel",
     "license": "MIT",
-    "homepage": "https://github.com/mohammadsalmani28/aparat",
+    "homepage": "https://github.com/mohammadsalmani28/video",
     "keywords": [
         "laravel",
         "php",
         "aparat",
         "video",
-        "package"
+        "package",
+        "youtube"
     ],
     "authors": [
         {
@@ -19,10 +20,9 @@
     ],
     "autoload": {
         "psr-4": {
-          "Mohammadsalmani28\\Aparat\\": "src"
+          "Mohammadsalmani28\\Video\\": "src"
         }
     },
-    "require": {},
-    "minimum-stability": "dev"
-    
+    "minimum-stability": "dev",
+    "require": {}
 }
