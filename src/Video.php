@@ -29,6 +29,9 @@ class Video
             case 'namasha' :
                 return self::namasha($url);
                 break;
+            case 'vimeo' :
+                return self::vimeo($url);
+                break;
             default:
                 return 'your service name is wrong!';
         }
@@ -77,5 +80,16 @@ class Video
                 <iframe class=\"embed-responsive-item\" src=\"$url\"
                 frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\"
                 mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe></div>";
+    }
+
+    private static function vimeo($url)
+    {
+        $url = explode("/", $url);
+        $id = end($url);
+        $url = "https://player.vimeo.com/video/{$id}";
+        return "<div class=\"embed-responsive embed-responsive-16by9\">
+                <iframe class=\"embed-responsive-item\" src=\"$url\" 
+                frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen>
+                </iframe></div>";
     }
 }
