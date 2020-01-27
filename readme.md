@@ -45,6 +45,9 @@ Examples:
 ```bash
 @video('namasha', 'https://www.namasha.com/v/vEePZkl5') 
 ```
+```bash
+@video('vimeo', 'https://vimeo.com/151390908') 
+```
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
